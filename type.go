@@ -108,7 +108,8 @@ type OpenURIAction struct {
 
 // Image is a simple type of message sent back to dialogflow
 type Image struct {
-	ImageURI string `json:"imageUri,omitempty"` // Optional. The public URI to an image file.
+	ImageURI          string `json:"imageUri,omitempty"` // Optional. The public URI to an image file.
+	AccessibilityText string `json:"accessibility_text"`
 }
 
 // GetKey implements the RichMessage interface and returns the JSON key
